@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #E7F5DC;
+  --color-surface: #FBFDF8;
+  --color-mist: #CFE1B9;
+  --color-muted: #88976C;
+  --color-accent: #728156;
+  --color-ink: #26301F;
+
+  --font-display: "Fraunces", serif;
+  --font-sans: "Inter", sans-serif;
+
+  --radius-card: 14px;
+}
+
+body {
+  @apply bg-paper text-ink font-sans;
+}
