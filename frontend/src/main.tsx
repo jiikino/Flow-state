@@ -7,6 +7,7 @@ import Signup from './pages/Signup'
 import Dashboard from './pages/Dashboard'
 import ClassFolder from './pages/ClassFolder'
 import Study from './pages/Study'
+import ProfileSetup from './pages/ProfileSetup'
 import './index.css'
 
 const router = createBrowserRouter([
@@ -14,9 +15,10 @@ const router = createBrowserRouter([
     path: '/',
     element: <App />,
     children: [
-      { index: true, element: <Dashboard /> },
+      { index: true, element: <Dashboard /> }, // Dashboard is the default page
       { path: 'classes/:classId', element: <ClassFolder /> },
       { path: 'classes/:classId/study', element: <Study /> },
+      { path: 'profile-setup', element: <ProfileSetup /> },
     ],
   },
   { path: 'login', element: <Login /> },
